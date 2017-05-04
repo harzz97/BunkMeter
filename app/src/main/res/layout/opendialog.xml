@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/total"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/Discard"
+            android:layout_alignStart="@+id/bunked"
+            android:layout_marginBottom="23dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="SubjectName"
+            android:ems="10"
+            android:inputType="number"/>
+
+
+        <TextView
+            android:id="@+id/tclass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/total"
+            android:layout_alignBottom="@+id/total"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:text="Limit for Bunking :"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="77dp"/>
+
+        <EditText
+            android:id="@+id/bunked"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/username"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="number"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1"/>
+
+        <TextView
+            android:id="@+id/bunkText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/bunked"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:text="Classes Already Bunked"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="133dp"/>
+
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/textView"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:hint="Subject Name"
+            android:inputType="text|textPersonName"
+            android:textAlignment="viewStart"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1"/>
+
+        <Button
+            android:id="@+id/OK"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/bunkText"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/bunked"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="87dp"
+            android:layout_toStartOf="@+id/total"
+            android:text="@string/OK"/>
+
+        <Button
+            android:id="@+id/Discard"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/OK"
+            android:layout_alignBottom="@+id/OK"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@+id/OK"
+
+            android:text="@string/Discard"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="547dp"
+        tools:layout_editor_absoluteY="359dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp">
+
+    <TextView
+        android:id="@+id/Modify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/LongClickTitle"
+        android:layout_below="@+id/LongClickTitle"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="25dp"
+        android:text="Modify"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/LongClickTitle"
+        android:layout_below="@+id/LongClickTitle"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:text="Delete"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/LongClickTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Choose an Option"
+        android:textSize="25sp"/>
+</RelativeLayout>

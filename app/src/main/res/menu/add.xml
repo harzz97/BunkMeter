@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+//settings area
+    <item android:title="Delete all Subjects"
+          android:id="@+id/Delete"
+        />
+    <item android:title="About"
+          android:id="@+id/About"
+        />
+    //Add icon
+    <item
+        android:id="@+id/Add"
+
+        android:icon="@drawable/add"
+        android:title="Add Subjects"
+        app:showAsAction="always"/>
+
+
+
+</menu>
